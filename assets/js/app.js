@@ -1,9 +1,7 @@
 const bgImage = document.querySelector('#bg')
 const clock = document.querySelector('.clock-text')
 
-bgImage.style.backgroundImage = 'url(https://picsum.photos/1920/1200)'
-
-function getStandardTime() {
+const getStandardTime = () => {
   const time = new Date()
   let hours = time.getHours()
   let minutes = time.getMinutes()
@@ -30,5 +28,9 @@ function getStandardTime() {
 
   clock.textContent = finalTime
 }
+
+const changeBackgroundImage = (() => {
+  bgImage.style.backgroundImage = 'url(https://picsum.photos/1920/1200)'
+})()
 
 setInterval(getStandardTime, 1000)

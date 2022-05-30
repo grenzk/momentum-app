@@ -1,3 +1,8 @@
 @use 'config/variables';
 @use 'base/base';
+@use 'layout/layout';
 @use 'components/background';
+@use 'components/header';
+@use 'components/clock';
+@use 'components/focus';
+@use 'components/footer';

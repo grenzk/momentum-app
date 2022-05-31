@@ -11,6 +11,7 @@
     />
     <script src="./assets/js/app.js" defer></script>
     <script src="./assets/js/greeting.js" defer></script>
+    <script src="./assets/js/quotes.js" defer></script>
     <title>Momentum App</title>
   </head>
   <body>
@@ -37,6 +38,9 @@
             </div>
 
             <div class="text-input">
+              <div id="fade-in">
+                <span id="greeting" class="hidden"></span>
+              </div>
               <form id="login-form" class="hidden">
                 <input
                   class="logininput"
@@ -47,11 +51,14 @@
                 />
                 <!-- <input class="login" type="submit" value="Log in" /> -->
               </form>
-              <span id="greeting" class="hidden"></span>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
   </body>
 </html>

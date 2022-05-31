@@ -209,10 +209,70 @@ a {
   text-align: center;
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
+  transition: 0.4s;
 }
 
+.fade-in-text {
+  animation: fadeIn linear 1s;
+  -webkit-animation: fadeIn linear 1s;
+  -moz-animation: fadeIn linear 1s;
+  -o-animation: fadeIn linear 1s;
+  -ms-animation: fadeIn linear 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .hidden {
-  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+#quote {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  font-style: italic;
+  font-size: 12px;
+  text-align: center;
+  font-size: 0.9em;
 }
 
 @media screen and (min-width: 968px) {

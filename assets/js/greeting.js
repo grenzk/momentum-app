@@ -19,7 +19,7 @@ function onLoginSubmit(event) {
 function printGreetings(username) {
   greeting.innerText = `Welcome, ${username}.`
   greeting.classList.remove(HIDDEN_CLASSNAME)
-  fadeIn.classList.add("fade-in-text")
+  fadeIn.classList.add('fade-in-text')
 }
 
 if (savedUsername === null) {

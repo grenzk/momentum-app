@@ -22,10 +22,10 @@
 }
 @media screen and (min-width: 968px) {
   :root {
-    --biggest-font-size: 3.5rem;
-    --small-font-size: 0.875rem;
+    --biggest-font-size: 8rem;
+    --small-font-size: 3rem;
     --smaller-font-size: 0.813rem;
-    --tiny-font-size: 0.75rem;
+    --tiny-font-size: 2rem;
   }
 }
 
@@ -195,16 +195,35 @@ a {
   margin-left: var(--mb-0-25);
 }
 
-.clock-date {
+.logininput {
+  color: var(--text-color);
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 3px solid white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.text-input {
   text-align: center;
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (min-width: 968px) {
   .container {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .clock-circle {
+    width: 300px;
+    height: 300px;
   }
 }
 

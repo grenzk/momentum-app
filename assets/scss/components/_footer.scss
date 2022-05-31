@@ -2,5 +2,11 @@ footer {
   justify-content: space-between;
   position: fixed;
   bottom: 0;
-  width: 93%;
+  width: 100%;
+}
+
+.quote {
+  text-align: center;
+  font-size: var(--normal-font-size);
+  font-style: italic;
 }

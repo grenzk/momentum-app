@@ -1,5 +1,7 @@
 const bgImage = document.querySelector('#bg')
 const clock = document.querySelector('.clock-text')
+const quotesApi = 'https://quotes.rest/qod?language=en'
+const quote = document.querySelector('.quote')
 
 const getStandardTime = () => {
   const time = new Date()
@@ -31,6 +33,15 @@ const getStandardTime = () => {
 
 const changeBackgroundImage = (() => {
   bgImage.style.backgroundImage = 'url(https://picsum.photos/1920/1200)'
+})()
+
+const generateQuotes = (() => {
+  fetch(quotesApi)
+    .then(response => response.json())
+    .then(data => {
+      let randomQuotes = data.contents.quotes[0].quote
+      quote.textContent = `"${randomQuotes}"`
+    })
 })()
 
 setInterval(getStandardTime, 1000)

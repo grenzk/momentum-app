@@ -13,12 +13,14 @@
   --body-font: 'Poppins', sans-serif;
 
   --biggest-font-size: 3rem;
+  --placeholder-font-size: 0.7rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
   --tiny-font-size: 0.625rem;
 
   @media screen and (min-width: 968px) {
     --biggest-font-size: 8rem;
+    --placeholder-font-size: 1.875rem;
     --small-font-size: 3rem;
     --smaller-font-size: 0.813rem;
     --tiny-font-size: 2rem;

@@ -23,6 +23,7 @@ function printGreetings(username) {
 }
 
 if (savedUsername === null) {
+  loginInput.value = ''
   loginForm.classList.remove(HIDDEN_CLASSNAME)
   loginForm.addEventListener('submit', onLoginSubmit)
 } else {

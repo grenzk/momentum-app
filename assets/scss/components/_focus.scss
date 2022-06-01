@@ -1,18 +1,58 @@
-.focus-input {
+#js-main-focus-input {
   color: var(--text-color);
   border: 0;
   outline: 0;
   background: transparent;
   border-bottom: 3px solid white;
-  font-size: 20px;
+  font-size: var(--placeholder-font-size);
   text-align: center;
+  width: 50%;
 }
 
 #focus-form {
   padding-top: 3rem;
 }
 
-#focus-text {
+.greeting__main-focus-text {
   font-size: var(--tiny-font-size);
   font-weight: 400;
+}
+
+.question {
+  font-size: var(--tiny-font-size);
+  font-weight: 400;
+}
+
+#delete-btn {
+  font-size: 2rem;
+  opacity: 0;
+}
+
+.input--checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.main-focus__input-container.disappear {
+  display: none;
+}
+
+.main-focus__showing-container.disappear {
+  display: none;
+}
+
+.main-focus__showing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.main-focus__showing-container:hover #delete-btn {
+  opacity: 0.5;
 }

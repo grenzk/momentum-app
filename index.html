@@ -12,6 +12,7 @@
     <script src="./assets/js/app.js" defer></script>
     <script src="./assets/js/greeting.js" defer></script>
     <script src="./assets/js/quotes.js" defer></script>
+    <script src="./assets/js/mainFocus.js" defer></script>
     <title>Momentum App</title>
   </head>
   <body>
@@ -51,10 +52,34 @@
                 />
                 <!-- <input class="login" type="submit" value="Log in" /> -->
               </form>
-              <form id="focus-form">
-                <h3 id="focus-text">What is your main focus for today?</h3>
-                <input class="focus-input" type="text" placeholder="" required />
-              </form>
+
+              <div class="main-focus__input-container" id="js-question">
+                <!-- <span class="question">What is your main focus for today?</span> -->
+                <form class="form" id="js-main-focus-form">
+                  <input
+                    type="text"
+                    class="input input--main-focus"
+                    id="js-main-focus-input"
+                    placeholder=" What is your main focus for today?"
+                    autocomplete="off"
+                  />
+                </form>
+              </div>
+              <div
+                class="main-focus__showing-container disappear"
+                id="js-focus-showing"
+              >
+                <input
+                  type="checkbox"
+                  class="input--checkbox"
+                  id="js-checkbox-focus"
+                />
+                <div
+                  class="greeting__main-focus-text"
+                  id="js-main-focus-text"
+                ></div>
+                <i class='bx bx-trash' id="delete-btn"></i>
+              </div>
             </div>
           </div>
         </div>

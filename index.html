@@ -13,6 +13,7 @@
     <script src="./assets/js/greeting.js" defer></script>
     <script src="./assets/js/quotes.js" defer></script>
     <script src="./assets/js/mainFocus.js" defer></script>
+    <script src="./assets/js/drag.js" defer></script>
     <title>Momentum App</title>
   </head>
   <body>
@@ -89,5 +90,15 @@
       <span></span>
       <span></span>
     </div>
+    <div id="todo-container">
+      <h1 id="todo-container-header"> To-Do List <i class='bx bxs-plus-square' id="toggle" ></i></i></h1>
+      <input type="text" id="add-todo" placeholder="Add a new TO-DO">
+      <ul>
+          <li draggable="true"><span class="todo-object"><i class='bx bxs-trash' ></i></span> Commit</li>
+          <li draggable="true"><span class="todo-object"><i class='bx bxs-trash' ></i></span> Resolve conflicts </li>
+          <li draggable="true"><span class="todo-object"><i class='bx bxs-trash' ></i></span> Blame a partner </li>
+          <li draggable="true"><span class="todo-object"><i class='bx bxs-trash' ></i></span> Go home</li>
+      </ul>
+  </div>
   </body>
 </html>

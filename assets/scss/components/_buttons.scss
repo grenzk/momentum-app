@@ -1,0 +1,24 @@
+@mixin button-styling {
+  position: absolute;
+  padding: 0.25rem;
+  display: flex;
+  top: 1rem;
+  border-radius: 50%;
+  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1),
+    inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
+}
+
+.todo-button-container {
+  @include button-styling;
+  right: 1rem;
+}
+
+#todo-button,
+#settings-button {
+  font-size: 1.5rem;
+}
+
+.settings-button-container {
+  @include button-styling;
+  left: 1rem;
+}

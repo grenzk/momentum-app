@@ -42,7 +42,6 @@ body {
   font-family: var(--body-font);
   background-color: var(--body-color);
   color: var(--text-color);
-  overflow: hidden;
 }
 
 a {
@@ -438,6 +437,31 @@ li.over {
 .hide {
   opacity: 0;
   transition: opacity 500ms;
+}
+
+.todo-button-container {
+  position: absolute;
+  padding: 0.25rem;
+  display: flex;
+  top: 1rem;
+  border-radius: 50%;
+  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1), inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
+  right: 1rem;
+}
+
+#todo-button,
+#settings-button {
+  font-size: 1.5rem;
+}
+
+.settings-button-container {
+  position: absolute;
+  padding: 0.25rem;
+  display: flex;
+  top: 1rem;
+  border-radius: 50%;
+  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 0%, 100%, 1), inset 1px 1px 1px hsla(var(--hue-color), 30%, 86%, 1);
+  left: 1rem;
 }
 
 @media screen and (min-width: 968px) {

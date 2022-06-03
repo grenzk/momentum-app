@@ -431,15 +431,6 @@ li.over {
   border: 1px dashed grey;
 }
 
-.show {
-  opacity: 1;
-}
-
-.hide {
-  opacity: 0;
-  transition: opacity 500ms;
-}
-
 .todo-button-container {
   position: absolute;
   padding: 0.25rem;

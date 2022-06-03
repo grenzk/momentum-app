@@ -41,8 +41,7 @@ function addToDo(e) {
     completeToDo(li)
     deleteToDo(span)
 
-    toggle.classList.toggle('bxs-minus-square')
-    toggle.classList.toggle('bxs-plus-square')
+    toggle.classList.add('bxs-minus-square')
   }
 }
 

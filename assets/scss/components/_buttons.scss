@@ -14,11 +14,11 @@
 }
 
 #todo-button,
-#settings-button {
+#darkmode-button {
   font-size: 1.5rem;
 }
 
-.settings-button-container {
+.darkmode-button-container {
   @include button-styling;
   left: 1rem;
 }

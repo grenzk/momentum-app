@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 :root {
-  --hue-color: 240;
+  --hue-color: 255;
   --first-color: hsl(var(--hue-color), 53%, 49%);
   --title-color: hsl(var(--hue-color), 53%, 15%);
   --text-color: hsl(var(--hue-color), 12%, 35%);
@@ -78,7 +78,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.4s;
 }
 
 .clock-content {
@@ -444,6 +443,8 @@ li.over {
 #todo-button,
 #darkmode-button {
   font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
 }
 
 .darkmode-button-container {
@@ -464,6 +465,33 @@ li.over {
 .hide {
   opacity: 0;
   transition: opacity 400ms;
+}
+
+body.dark-theme {
+  --title-color: hsl(var(--hue-color), 12%, 95%);
+  --text-color: hsl(var(--hue-color), 12%, 75%);
+  --body-color: hsl(var(--hue-color), 10%, 16%);
+}
+
+.dark-theme .clock-circle {
+  box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1), -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1), inset -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1), inset 6px 6px 12px hsla(var(--hue-color), 8%, 12%, 1);
+}
+.dark-theme .darkmode-button-container,
+.dark-theme .todo-button-container {
+  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1), inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
+}
+.dark-theme #todo-container-header {
+  background-color: var(--body-color);
+}
+.dark-theme li {
+  background-color: var(--body-color);
+}
+.dark-theme li:nth-child(2n),
+.dark-theme #add-todo {
+  background-color: hsl(var(--hue-color), 10%, 20%);
+}
+.dark-theme #add-todo {
+  color: var(--text-color);
 }
 
 @media screen and (min-width: 968px) {

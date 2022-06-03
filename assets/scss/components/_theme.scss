@@ -1,0 +1,37 @@
+body.dark-theme {
+  --title-color: hsl(var(--hue-color), 12%, 95%);
+  --text-color: hsl(var(--hue-color), 12%, 75%);
+  --body-color: hsl(var(--hue-color), 10%, 16%);
+}
+
+.dark-theme {
+  .clock-circle {
+    box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1),
+      -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
+      inset -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1),
+      inset 6px 6px 12px hsla(var(--hue-color), 8%, 12%, 1);
+  }
+
+  .darkmode-button-container, 
+  .todo-button-container  {
+    box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1),
+      inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
+  }
+
+  #todo-container-header {
+    background-color: var(--body-color);
+  }
+
+  li {
+    background-color: var(--body-color);
+  }
+
+  li:nth-child(2n),
+  #add-todo {
+    background-color: hsl(var(--hue-color), 10%, 20%);
+  }
+
+  #add-todo {
+    color: var(--text-color);
+  }
+}

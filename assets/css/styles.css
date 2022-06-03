@@ -474,11 +474,11 @@ body.dark-theme {
 }
 
 .dark-theme .clock-circle {
-  box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1), -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1), inset -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1), inset 6px 6px 12px hsla(var(--hue-color), 8%, 12%, 1);
+  box-shadow: 6px 6px 16px hsla(var(--hue-color), 8%, 12%, 1), -6px -6px 16px hsla(var(--hue-color), 8%, 20%, 1);
 }
 .dark-theme .darkmode-button-container,
 .dark-theme .todo-button-container {
-  box-shadow: inset -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1), inset 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
+  box-shadow: -1px -1px 1px hsla(var(--hue-color), 8%, 20%, 1), 1px 1px 1px hsla(var(--hue-color), 8%, 12%, 1);
 }
 .dark-theme #todo-container-header {
   background-color: var(--body-color);

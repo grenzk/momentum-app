@@ -210,6 +210,7 @@ ul {
   font-size: var(--placeholder-font-size);
   text-align: center;
   width: 50%;
+  margin-bottom: var(--mb-1-5);
 }
 
 .text-input {
@@ -494,6 +495,43 @@ body.dark-theme {
   color: var(--text-color);
 }
 
+@media screen and (max-width: 400px) {
+  :root {
+    --placeholder-font-size: 0.9rem;
+  }
+
+  .logininput,
+#js-main-focus-input {
+    width: 70%;
+  }
+
+  #greeting {
+    font-size: 1rem;
+  }
+
+  .greeting__main-focus-text {
+    font-size: 1rem;
+  }
+
+  #delete-btn {
+    font-size: 1.3rem;
+  }
+
+  .input--checkbox {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+@media screen and (min-width: 812px) {
+  .clock-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  #quote {
+    font-size: 0.5rem;
+  }
+}
 @media screen and (min-width: 968px) {
   .container {
     margin-left: auto;
@@ -503,6 +541,14 @@ body.dark-theme {
   .clock-circle {
     width: 300px;
     height: 300px;
+  }
+
+  #quote {
+    font-size: 0.9rem;
+  }
+
+  #todo-container {
+    width: 400px;
   }
 }
 

@@ -22,3 +22,12 @@
   @include button-styling;
   left: 1rem;
 }
+
+.show {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+.hide {
+  opacity: 0;
+  transition: opacity 400ms;
+}

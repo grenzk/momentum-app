@@ -364,6 +364,7 @@ ul {
 .bxs-plus-square {
   float: right;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .bxs-minus-square {
@@ -418,6 +419,24 @@ li:hover .todo-object {
   border: 2px solid var(--title-color);
   background: white;
   outline: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+li.over {
+  border: 1px dashed grey;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 500ms;
 }
 
 @media screen and (min-width: 968px) {

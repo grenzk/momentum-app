@@ -4,7 +4,7 @@
   right: 15%;
   z-index: 9;
   width: 400px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 #todo-container-header {
@@ -22,6 +22,7 @@
 .bxs-plus-square {
   float: right;
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .bxs-minus-square {
@@ -77,3 +78,21 @@ li:hover .todo-object {
   background: white;
   outline: none;
 }
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+li.over {
+  border: 1px dashed grey;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+  transition: opacity 500ms;
+} 

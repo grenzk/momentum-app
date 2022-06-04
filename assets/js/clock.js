@@ -23,10 +23,7 @@ const clockText = () => {
 
   let hh = date.getHours(),
     ampm,
-    mm = date.getMinutes(),
-    day = date.getDate(),
-    month = date.getMonth(),
-    year = date.getFullYear()
+    mm = date.getMinutes()
 
   if (hh >= 12) {
     hh = hh - 12

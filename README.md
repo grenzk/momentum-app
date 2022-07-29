@@ -9,7 +9,3 @@ A minimalist momentum app with neumorphic design that features a clock, a greeti
 ## Live Demo
 
 Github Page (https://grenzk.github.io/momentum-app/)
-
-## Source
-
-Avion School (https://docs.avionschool.com/avn-mcourse/-MYjabeTubdULkJ4UAcG/extra-projects/project-momentum-app)
